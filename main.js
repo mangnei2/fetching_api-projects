@@ -19,3 +19,12 @@ function checkStatus(response){
       return Promise.reject(new Error(response.statusText));
     }
   }
+  
+  //handleData
+function handleData(data){
+    let url = data.message;
+    console.log(url)
+    let regex = /https:\/\/images\.dog\.ceo\/breeds\/(\w+\-?\w+)\/.+/g;
+    let breedName = regex.exec(url);
+    document.getElementById('randomImageContainer').innerHTML = `<img src='${url}'/>`;
+  }
