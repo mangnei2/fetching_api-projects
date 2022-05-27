@@ -10,3 +10,12 @@ function getRandomDoggo(){
       .then(data => handleData(data))
       .catch(error => notifyUser(error))
   }
+  
+//checkStatus
+function checkStatus(response){
+    if(response.ok){
+      return Promise.resolve(response);
+    }else{
+      return Promise.reject(new Error(response.statusText));
+    }
+  }
