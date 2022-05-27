@@ -1,0 +1,21 @@
+h2{
+    margin-top:30px;
+  }
+  
+  #randomImageContainer, #listImageContainer{
+    width:100%;
+    min-height: 300px;
+  }
+  
+  #randomImageContainer{
+    background-color:#fff;
+  }
+  
+  button{
+    margin-top:30px;
+    text-align:center;
+  }
+  
+  .alert{
+    display:none;
+  }
